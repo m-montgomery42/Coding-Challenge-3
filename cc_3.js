@@ -20,3 +20,19 @@ let totalOrders = orders.reduce((sum, order) => sum + order, 0);
 // Log the updated array and total order count to the console
 console.log("Updated Order List:", orders);
 console.log("Total Order Count:", totalOrders);
+
+// Task 3: Employee Performance Tracking Scenario: HR System You are tracking employee performance data
+// Declare an object employee with properties: name, role, performanceScore, and isActive
+let employee = {
+    name: "John Doe",
+    role: "Software Engineer",
+    performanceScore: 85,
+    isActive: true
+};
+console.log("Object Employee:", {...employee});
+// Update the performanceScore property
+employee.performanceScore = 92;
+// Add a new property promotionEligible with a boolean value
+employee.promotionEligible = employee.performanceScore > 90;
+// Log the updated employee object to the console
+console.log("Updated Object Employee:", employee);
