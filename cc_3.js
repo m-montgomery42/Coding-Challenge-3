@@ -8,3 +8,15 @@ prices.push(18.25);
 prices.shift();
 // Log the updated price list to the console
 console.log("Updated Price List:", prices);
+
+// Task 2: Modifying Customer Orders Scenario: Order List You are processing customer orders and need to update order quantities
+// Declare an array orders with at least five numerical values representing quantities
+let orders = [10, 25, 30, 15, 50];
+console.log("Order List:", [...orders]);
+// Increase the third order quantity by 5
+orders[2] += 5;
+// Calculate the total number of all orders
+let totalOrders = orders.reduce((sum, order) => sum + order, 0);
+// Log the updated array and total order count to the console
+console.log("Updated Order List:", orders);
+console.log("Total Order Count:", totalOrders);
